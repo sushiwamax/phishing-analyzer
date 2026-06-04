@@ -204,7 +204,7 @@ async function runAnalysis() {
   };
 
   try {
-    const res = await fetch('https://haichim25-email-phishing-analyzer.hf.space/analyze',
+    const res = await fetch('https://haichim25-email-phishing-analyzer.hf.space/analyze', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload)
